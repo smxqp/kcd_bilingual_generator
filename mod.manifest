@@ -1,0 +1,9 @@
+{
+  "name": "KCD Bilingual Generator",
+  "version": "1.0",
+  "author": "smxq",
+  "description": "Bilingual text mod with dual language support",
+  "modRequirements": ["1.9.6"],
+  "uuid": "kcd-bilingual-generator",
+  "priority": 1
+}

@@ -1,0 +1,72 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+dist/
+build/
+*.spec
+
+# Compiled binaries (from PyInstaller/Nuitka builds)
+*.exe
+*.pyd
+*.dll
+
+# Localization outputs (from utils/mod_generator.py lines 24-36)
+Localization/
+
+# Environment
+.env
+.venv
+env/
+venv/
+ENV/
+
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+.DS_Store
+
+# Debug/crash reports (seen in nuitka-crash-report.xml)
+*.log
+*.xml
+
+# Project specific ignores (mod output directory)
+kcd_bilingual_mod/
+kcd_bilingual_windowed.dist/ 
+
+*.code-workspace
+
+# Test artifacts
+test_data/
+.coverage
+
+# IDE
+.vscode/
+.idea/
+
+# Logs and databases
+*.sqlite
+
+dist/
+build/
+.pytest*

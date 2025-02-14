@@ -1,0 +1,3 @@
+kcd_bilingual>=1.0
+sv_ttk>=1.0
+pyinstaller>=5.0 
