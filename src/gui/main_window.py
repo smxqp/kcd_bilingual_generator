@@ -6,7 +6,8 @@ import sv_ttk
 
 from .styles import StyleManager
 from .sections import HeaderSection, LanguageSection, FilesSection, OutputSection
-from src.utils import GamePathFinder, ModGenerator
+from src.utils.path_finder import GamePathFinder
+from src.utils.mod_generator import ModGenerator
 
 class BilingualModGUI:
     def __init__(self, root):

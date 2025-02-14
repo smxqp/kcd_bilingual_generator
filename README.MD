@@ -14,32 +14,50 @@ A tool for generating bilingual mods for Kingdom Come: Deliverance that allow yo
 
 - Python 3.8 or higher
 - Kingdom Come: Deliverance game installation
-- Required Python packages:
-  - tkinter
-  - sv_ttk
-  - kcd_bilingual
+- Tcl/Tk runtime (included with standard Python installs)
 
 ## Installation
 
 1. Download the latest release from [GitHub Releases](https://github.com/smxqp/kcd_bilingual_generator/releases)
 
-2. Install required packages:
+
+## Manual Development Setup
+
+1. **Download Python Embedded (Windows):**
+   - Get the latest Windows embeddable package from [python.org](https://www.python.org/downloads/windows/)
+   - Extract to a folder like `C:\python-embedded`
+
+2. **Add Python to PATH:**
+```batch
+set PATH=C:\python-embedded;%PATH%
+```
+
+3. **Install Required Packages:**
 ```bash
 pip install -r requirements.txt
+```
+3. **Install pip:**
+```bash
+curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py
+python get-pip.py
+```
+
+4. **Install dependencies:**
+```bash
+pip install tkinter sv_ttk pyinstaller
+```
+5. **Run application:**
+```bash
+python -m src.kcd_bilingual_windowed
 ```
 
 ## Usage
 
-1. Run the application:
-```bash
-python kcd_bilingual_windowed.py
-```
-
-2. Select languages:
+1. Select languages:
    - Primary Language: The main game text language
    - Secondary Language: The translation that will appear with the main text
 
-3. Choose which files to process:
+2. Choose which files to process:
    - Dialogues (text_ui_dialog.xml)
    - Quests (text_ui_quest.xml)
    - Tutorials (text_ui_tutorials.xml)
@@ -47,9 +65,11 @@ python kcd_bilingual_windowed.py
    - Items (text_ui_items.xml)
    - Menus (text_ui_menus.xml)
 
-4. Select output location for the mod
+3. Select output location for the mod
 
-5. Click "Generate Bilingual Mod"
+4. Click "Generate Bilingual Mod"
+
+5. Copy the generated 'kcd_bilingual_mod' folder to your game's Mods folder if needed and enable the mod in KCD Launcher (Mods tab) or other Mods manager.
 
 ## Installing the Generated Mod
 

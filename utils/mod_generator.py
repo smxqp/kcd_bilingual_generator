@@ -5,7 +5,7 @@ Handles creation of bilingual localization files for Kingdom Come: Deliverance
 
 # Creating mod structure
 from pathlib import Path
-from kcd_bilingual import BilingualPatcher
+from src.kcd_bilingual import BilingualPatcher
 
 class ModGenerator:
     def __init__(self):

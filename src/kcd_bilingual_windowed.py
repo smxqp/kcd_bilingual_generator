@@ -1,6 +1,6 @@
 import tkinter as tk
 from src.kcd_bilingual import BilingualPatcher
-from src.gui import BilingualModGUI
+from src.gui.main_window import BilingualModGUI
 
 def main():
     # Create root window
